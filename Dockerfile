@@ -6,7 +6,7 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
     apt-get install -y --no-install-recommends\
         gcc g++ gperf bison flex texinfo help2man make libncurses5-dev \
         python3-dev libtool automake libtool-bin gawk wget rsync git patch \
-        unzip xz-utils bzip2 ca-certificates && \
+        unzip xz-utils bzip2 ca-certificates zlib1g zlib1g-dev && \
     apt-get clean autoclean && \
     apt-get autoremove -y && \
     rm -rf /var/lib/apt/lists/*
